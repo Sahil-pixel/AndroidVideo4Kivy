@@ -1,0 +1,36 @@
+<VLayout>:
+	Image:
+		pos_hint:{'center_x':0.5,'center_y':0.5}
+		size_hint:None,None
+		size:900,1280
+		#fit_mode:'fill'
+		texture:root._tex
+		id:img
+	
+	BoxLayout:
+		orientation:'horizontal'
+		pos_hint:{'center_x':0.5,'center_y':0.1}
+		size_hint_y:None
+		height:'50dp'
+		Button:
+			size_hint_x:None
+			width:'50dp'
+			text:'init'
+			on_release:root._init_button()
+		Button:
+			size_hint_x:None
+			width:'50dp'
+			text:'play'
+			on_release:root._play()
+		Button:
+			size_hint_x:None
+			width:'90dp'
+			text:'play/pause'
+			on_release:root._play_pause()
+	
+		Button:
+			size_hint_x:None
+			width:'50dp'
+			text:'stop'
+			on_release:root._stop()
+		
